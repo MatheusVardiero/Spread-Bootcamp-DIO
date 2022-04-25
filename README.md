@@ -5,10 +5,8 @@
 
 [Spread Bootcamp DIO](https://www.dio.me/en)
 
-*1 - CSS-Flexbox*
-  Aprendendo a utilizar o flexbox
+*1 - CSS-Flexbox - Aprendendo a utilizar o flexbox*
 
-*2 - Flex-Project*
-  Primeiro projeto utilizando flexbox
+*2 - Flex-Project - Primeiro projeto utilizando flexbox*
 
-/MATHEUS VARDIERO MARQUES/
+##### MATHEUS VARDIERO MARQUES
