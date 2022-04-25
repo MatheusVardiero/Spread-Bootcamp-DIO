@@ -1,0 +1,19 @@
+header {
+  background-color: navy;
+  color: white;
+  display: flex;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+.know-more {
+  
+}

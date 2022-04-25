@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align self</title>
+
+  <style>
+    .flex-container {
+      display: flex;
+      border: 2px solid black;
+      max-width: 350px;
+    }
+
+    .item {
+      background-color: steelblue;
+      margin: 5px;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .auto {
+      align-self: auto;
+    }
+
+    .flex-start {
+      align-self: flex-start;
+    }
+
+    .flex-end {
+      align-self: flex-end;
+    }
+
+    .center {
+      align-self: center;
+    }
+
+    .stretch {
+      align-self: stretch;
+    }
+
+    .baseline {
+      align-self: baseline;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>align self: auto</h1>
+  <div class="flex-container">
+    <div class="item auto">AA</div>
+    <div class="item auto">123</div>
+    <div class="item auto">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item auto">Item 4</div>
+  </div>
+
+  <h1>align self: flex-start</h1>
+  <div class="flex-container">
+    <div class="item flex-start">AA</div>
+    <div class="item flex-start">123</div>
+    <div class="item flex-start">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item flex-start">Item 4</div>
+  </div>
+
+  <h1>align self: flex-end</h1>
+  <div class="flex-container">
+    <div class="item flex-end">AA</div>
+    <div class="item flex-end">123</div>
+    <div class="item flex-end">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item flex-end">Item 4</div>
+  </div>
+
+  <h1>align self: center</h1>
+  <div class="flex-container">
+    <div class="item center">AA</div>
+    <div class="item center">123</div>
+    <div class="item center">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item center">Item 4</div>
+  </div>
+
+  <h1>align self: stretch</h1>
+  <div class="flex-container">
+    <div class="item stretch">AA</div>
+    <div class="item stretch">123</div>
+    <div class="item stretch">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item stretch">Item 4</div>
+  </div>
+
+  <h1>align self: baseline</h1>
+  <div class="flex-container">
+    <div class="item baseline">AA</div>
+    <div class="item baseline">123</div>
+    <div class="item baseline">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+    <div class="item baseline">Item 4</div>
+  </div>
+</body>
+</html>

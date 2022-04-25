@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos - align content</title>
+
+  <style>
+      .container {
+        height: 400px;
+        max-width: 300px;
+        border: 2px solid black;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .item {
+      background-color: orangered;
+      margin: 5px;
+      padding: 0 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+      border: 2px solid black;
+    }
+
+    .stretch{
+      align-content: stretch;
+    }
+
+    .center {
+      align-content: center;
+    }
+
+    .flex-start {
+      align-content: flex-start;
+    }
+
+    .flex-end {
+      align-content: flex-end;
+    }
+
+    .space-between {
+      align-content: space-between;
+    }
+
+    .space-around {
+      align-content: space-around;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <h1>align-content: stretch (padrao)</h1>
+  <div class="container stretch">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>align-content: center</h1>
+  <div class="container center">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>align-content: flex-start</h1>
+  <div class="container flex-start">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>align-content: flex-end</h1>
+  <div class="container flex-end">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>align-content: space-between</h1>
+  <div class="container space-between">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>align-content: center</h1>
+  <div class="container space-around">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <!-- <h1>flex-direction: column / align-content: stretch</h1>
+  <div class="container stretch column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>flex-direction: column / align-content: center</h1>
+  <div class="container center column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>flex-direction: column / align-content: flex-start</h1>
+  <div class="container flex-start column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>flex-direction: column / align-content: flex-end</h1>
+  <div class="container flex-end column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>flex-direction: column / align-content: space-between</h1>
+  <div class="container space-between column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div>
+
+  <h1>flex-direction: column / align-content: space-around</h1>
+  <div class="container space-around column">
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum dolor sit, amet</div>
+    <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor sit, amet consectetur</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+    <div class="item">Lorem ipsum is therefore sit</div>
+  </div> -->
+  
+</body>
+</html>
