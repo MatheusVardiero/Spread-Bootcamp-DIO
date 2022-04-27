@@ -40,6 +40,7 @@ div img {
   margin: auto;
   max-width: 992px;
   width: 100%;
+  min-width: 320px;
 }
 
 .apresentacao {
@@ -146,9 +147,144 @@ div img {
   margin-top: 20px;
 }
 
+.plans {
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.plans h1 {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.list-plans {
+  display: flex;
+  align-items: flex-end;
+}
+
+.items-plans {
+  border: 5px solid black;
+  margin-right: 20px;
+  flex: 1;
+  padding: 10px;
+}
+
+.items-plans a {
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.items-plans h3 {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.items-plans h3::after {
+  content: "";
+  background-color: navy;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.items-plans ul {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.items-plans ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 10px 0 ;
+}
+
+.items-plans ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: navy;
+  margin-right: 5px;
+}
+
 footer {
   background-color: navy;
   color: white;
   display: flex;
   height: 100px;
+  align-items: center;
+}
+
+footer .footer {
+  justify-content: space-between;
+}
+
+/* Responsividade */
+/* Mobile */
+@media(max-width: 992px) {
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+  }
+
+  .know-more {
+    width: 100%;
+  }
+
+  .who-we-are {
+    flex-direction: column-reverse;
+  }
+
+  .who-we-are img {
+    min-width: 320px;
+    margin: auto;
+  }
+
+  .list-services {
+    flex-direction: column;
+  }
+
+  .items-services img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .items-services a {
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .list-plans {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .list-plans .items-plans {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
