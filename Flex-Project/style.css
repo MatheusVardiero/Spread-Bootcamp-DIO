@@ -1,7 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
+}
+
 header {
   background-color: navy;
   color: white;
   display: flex;
+  height: 100px;
+  align-items: center;
 }
 
 header a {
@@ -9,11 +17,138 @@ header a {
   text-decoration: none;
 }
 
-header ul {
+header .menu {
+  justify-content: space-between;
+}
+
+header .list-items {
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  max-width: 260px;
+  width: 100%;
+  align-items: center;
+}
+
+div img {
+  display: block;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  margin: auto;
+  max-width: 992px;
+  width: 100%;
+}
+
+.apresentacao {
+  height: 80vh;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .know-more {
-  
+  min-height: 200px;
+}
+
+.know-more h1 {
+  color: navy;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.know-more a {
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  margin: 10px 0 10px 0
+}
+
+.who-we-are {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.who-we-are-txt h1 {
+  color: navy;
+  margin-bottom: 20px;
+  border: 5px solid navy;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+  padding-left: 10px;
+  font-size: 32px;
+}
+
+.who-we-are-txt p {
+  line-height: 25px;
+}
+
+.who-we-are img {
+  min-width: 500px;
+}
+
+.container-services {
+  background-color: navy;
+  color: white;
+  width: 100%;
+}
+
+.services {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.list-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-title {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.list-services .items-services {
+  text-align: center;
+}
+
+.items-services a {
+  background-color: white;
+  color: navy;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 30px;
+  width: 220px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  margin: 20px 0 10px 0
+}
+
+.items-services img {
+  margin-bottom: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.items-services p{
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  display: flex;
+  height: 100px;
 }

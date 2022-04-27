@@ -9,88 +9,103 @@
 </head>
 <body>
     <header>
-      <h2><a href="#">FlexTurismos</a></h2>
-
-      <ul>
-        <li><a href="#">Quem Somos</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Planos</a></li>
-      </ul>
-
+      <div class="flex-container menu">
+        <h1><a href="#">FlexTurismos</a></h1>
+          <ul class="list-items">
+            <li><a href="#">Quem Somos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Planos</a></li>
+          </ul>
+      </div>
     </header>
 
-    <div class="main">
+    <div class="flex-container apresentacao">
       <div class="know-more">
-        <h1>Flex Turismos</h1>
+        <h1>Flex <br> Turismos</h1>
         <p>O melhor serviço para você!</p>
         <a href="#">Saiba mais!</a>
-        <img src="images/0-main.png" alt="saiba mais">
       </div>
+      <div>
+        <img class="know-more-img" src="images/0-main.png" alt="saiba mais">
+      </div>
+    </div>  
 
-      <div class="who-we-are">
+    <div class="flex-container who-we-are">
+      <div class="who-we-are-img">
         <img src="images/1-quem-somos.png" alt="quem somos">
-        <h2>Quem somos</h2>
+      </div>
+      <div class="who-we-are-txt">
+        <h1>Quem somos</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta fuga alias neque non dolores accusamus temporibus possimus ab, tenetur, praesentium tempore sequi! Est eaque pariatur at? Dolores, quisquam natus.</p> <br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis soluta fuga alias neque non dolores accusamus temporibus possimus ab, tenetur, praesentium tempore sequi! Est eaque pariatur at? Dolores, quisquam natus.</p>
       </div>
     </div>
 
-    <div class="services">
-      <h2>Serviços</h2>
-      <div class="travel-packages">
-        <img src="images/icon-1.png" alt="Pacotes de Viagens">
-        <p>Pacotes de Viagens</p>
-        <a href="#">Comprar agora</a>
-      </div>
-
-      <div class="accommodation">
-        <img src="images/icon-2.png" alt="Hospedagens">
-        <p>Hospedagens</p>
-        <a href="#">Comprar agora</a>
-      </div>
-
-      <div class="custom itineraries">
-        <img src="images/icon-3.png" alt="Roteiros Personalizados">
-        <p>Roteiros Personalizados</p>
-        <a href="#">Comprar agora</a>
+    <div class="container-services">
+      <div class="flex-container services">
+        <div class="services-title">
+          <h1>Serviços</h1>
+        </div>
+          <div class="list-services">
+            <div class="items-services">
+              <img src="images/icon-1.png" alt="Pacotes de Viagens">
+              <p>Pacotes de Viagens</p>
+              <a href="#">Comprar agora</a>
+            </div>
+      
+            <div class="items-services">
+              <img src="images/icon-2.png" alt="Hospedagens">
+              <p>Hospedagens</p>
+              <a href="#">Comprar agora</a>
+            </div>
+      
+            <div class="items-services">
+              <img src="images/icon-3.png" alt="Roteiros Personalizados">
+              <p>Roteiros Personalizados</p>
+              <a href="#">Comprar agora</a>
+            </div>
+          </div> 
       </div>
     </div>
 
-    <div class="plans">
-      <h2>Planos</h2>
-      <div class="plan1">
-        <h3>Plano 1</h3>
-        <ul>
-          <li>Suporte 24h</li>
-          <li>Serviço de quarto</li>
-          <li>Guia turístico</li>
-        </ul>
-        <a href="#">Saiba mais!</a>
-      </div>
-
-      <div class="plan2">
-        <h3>Plano 2</h3>
-        <ul>
-          <li>Suporte 24h</li>
-          <li>Serviço de quarto</li>
-          <li>Guia turístico</li>
-          <li>Roteiro de trilhas</li>
-          <li>Serviço personalizado</li>
-        </ul>
-        <a href="#">Saiba mais!</a>
-      </div>
-
-      <div class="plan3">
-        <h3>Plano 3</h3>
-        <ul>
-          <li>Suporte 24h</li>
-          <li>Serviço de quarto</li>
-          <li>Guia turístico</li>
-          <li>Roteiro de trilhas</li>
-          <li>Serviço personalizado</li>
-          <li>Área Vip</li>
-        </ul>
-        <a href="#">Saiba mais!</a>
-      </div>
+    <div class="flex-container">
+      <div class="plans">
+        <h2>Planos</h2>
+        <div class="plan1">
+          <h3>Plano 1</h3>
+          <ul>
+            <li>Suporte 24h</li>
+            <li>Serviço de quarto</li>
+            <li>Guia turístico</li>
+          </ul>
+          <a href="#">Saiba mais!</a>
+        </div>
+  
+        <div class="plan2">
+          <h3>Plano 2</h3>
+          <ul>
+            <li>Suporte 24h</li>
+            <li>Serviço de quarto</li>
+            <li>Guia turístico</li>
+            <li>Roteiro de trilhas</li>
+            <li>Serviço personalizado</li>
+          </ul>
+          <a href="#">Saiba mais!</a>
+        </div>
+  
+        <div class="plan3">
+          <h3>Plano 3</h3>
+          <ul>
+            <li>Suporte 24h</li>
+            <li>Serviço de quarto</li>
+            <li>Guia turístico</li>
+            <li>Roteiro de trilhas</li>
+            <li>Serviço personalizado</li>
+            <li>Área Vip</li>
+          </ul>
+          <a href="#">Saiba mais!</a>
+        </div>
+        </div>
       </div>
     </div>
 
