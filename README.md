@@ -11,4 +11,6 @@
 
 *3 - Pagina inicial do instagram*
 
+*4 - Contador Javascript*
+
 ##### MATHEUS VARDIERO MARQUES
