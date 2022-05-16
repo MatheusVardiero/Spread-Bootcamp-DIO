@@ -13,4 +13,6 @@
 
 *4 - Contador Javascript*
 
+*5 - Lista de tarefas*
+
 ##### MATHEUS VARDIERO MARQUES
