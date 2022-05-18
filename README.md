@@ -15,4 +15,8 @@
 
 *5 - Lista de tarefas*
 
+*6 - Palíndromo*
+
+*7 - Substitui pares por 0*
+
 ##### MATHEUS VARDIERO MARQUES
