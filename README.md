@@ -19,4 +19,8 @@
 
 *7 - Substitui pares por 0*
 
+*8 - Alunos aprovados*
+
+*9 - This*
+
 ##### MATHEUS VARDIERO MARQUES
