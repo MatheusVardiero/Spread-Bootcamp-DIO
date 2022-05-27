@@ -23,6 +23,10 @@
 
 *9 - This*
 
-*10 - Map e Set*
+*10 - Coleções Map e Set*
+
+*11 - Métodos Map, Filter, Reduce*
+
+*12 - Tratamento de erros*
 
 ##### MATHEUS VARDIERO MARQUES
