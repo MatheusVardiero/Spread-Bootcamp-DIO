@@ -29,4 +29,6 @@
 
 *12 - Tratamento de erros*
 
+*13 - Consumindo API - catapi*
+
 ##### MATHEUS VARDIERO MARQUES
