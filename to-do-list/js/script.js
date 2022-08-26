@@ -19,5 +19,30 @@ function adicionar() {
     newListValue.style.listStyle = "none"; // Tira as marcaçoes da lista (bolinhas pretas)
     document.getElementById("tarefa").value = "";
 
+    removeTarefa();
+
   }
+
+  function removeTarefa() {
+    const btnRemove = document.createElement('button');
+    btnRemove.setAttribute('id', 'btnRemove');
+    btnRemove.setAttribute('class', 'remove');
+    btnRemove.innerHTML = 'Remover';
+
+    document.getElementById("list").append(btnRemove);
+
+    const remover = document.querySelectorAll('.remove');
+
+    remover.forEach(remove => {
+      remove.addEventListener('click', removeItemList);
+    })
+  }
+
+  function removeItemList() {
+    document.querySelector('li').remove();
+    document.querySelector('#check').remove();
+    document.querySelector('#btnRemove').remove();
+  }
+
+  
 }
